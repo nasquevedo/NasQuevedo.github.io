@@ -1,0 +1,88 @@
+/* {
+    font-family: "Courier New";
+}*/
+
+.section {
+    padding: 2rem;
+}
+
+.icons {
+    width: 20px !important;
+}
+
+/** Presentation Styles **/
+#presentation {
+    text-align: center !important;
+}
+
+#presentation-title {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+    border-right: 0.15em solid #18bdec;
+    font-family: "Courier New";
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+#profile-img {
+    width: 40% !important;
+    margin: 2rem 7rem;
+    border-radius: 100%;
+}
+
+#profile-img:hover {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+
+/** Portfolio */
+.img-projects {
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    width: 10%;
+    border-radius: 100%;
+}
+
+.text-project {
+   border: 1px solid black; 
+   width: 9.5%;
+   color: white;
+   background-color: black;
+   border-radius: 100%;
+   position: absolute;
+   transform: translate(5%, 3%);
+   font-size: 12px;
+   height: 120px;
+   text-align: center;
+   opacity: 0;
+   vertical-align: middle;
+   padding: 1rem;
+   z-index: 1;
+   cursor: pointer;
+}
+
+.text-project a {
+    color: white;
+}
+
+.text-project:hover {
+    opacity: 0.5;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }

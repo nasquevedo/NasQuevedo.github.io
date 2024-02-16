@@ -1,0 +1,64 @@
+{
+    "navbar" : [
+        {
+            "id": "home-link",
+            "value": "INICIO"
+        },
+        {
+            "id": "resume-link",
+            "value": "CURRICULUM"
+        }
+    ],
+
+    "home": [
+        {
+            "id" : "presentation-title",
+            "value": "Hola, Soy Santiago Quevedo"
+        },
+        {
+            "id": "presentation-description",
+            "value": "Desarrollador Web PHP"
+        },
+        {
+            "id": "presentation-subtitle",
+            "value": "Desarrollador Backend - Desarrollador Fullstack"
+        }
+    ],
+
+    "profile": [
+        {
+            "id": "profile",
+            "value": "Perfil"
+        },
+        {
+            "id": "profile-description",
+            "value": "Desarrollador Backend con experiencia en PHP, Javascript, HTML5, CSS3 y MySQL, cuenta con experiencia y conocimiento en frameworks tales como Symfony, Laravel, NodeJs, ReactJs, jQuery y Jaws, tambien con conocimientos en Git, experiencia basica con PostgresSQL, Oracle y base de datos no relacional como MongoDB. Ha manejado VM y Docker, bueno trabajando en equipo e indivial, proactivo, le gusta aprender nuevas tecnologias, con ganas de seguir creciendo profesionalmente y personalmente.<br><br>Experiencia como desarrollador Fullstack diseñando y agregando funcionalidades a diferentes paginas o proyectos web."
+        }
+    ],
+
+    "portfolio": [
+        {
+            "id": "portfolio",
+            "value": "Portafolio"
+        }
+    ],
+
+    "contact": [
+        {
+            "id": "contact-title",
+            "value": "Contactame"
+        },
+        {
+            "id": "from",
+            "value": "De"
+        },
+        {
+            "id": "subject",
+            "value": "Asunto"
+        },
+        {
+            "id": "message",
+            "value": "Mensaje ... "
+        }
+    ]
+}

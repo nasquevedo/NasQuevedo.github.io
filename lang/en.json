@@ -1,0 +1,64 @@
+{
+    "navbar" : [
+        {
+            "id": "home-link",
+            "value": "HOME"
+        },
+        {
+            "id": "resume-link",
+            "value": "RESUME"
+        }
+    ],
+
+    "home": [
+        {
+            "id" : "presentation-title",
+            "value": "Hello, I'm Santiago Quevedo"
+        },
+        {
+            "id": "presentation-description",
+            "value": "PHP Web Developer"
+        },
+        {
+            "id": "presentation-subtitle",
+            "value": "Backend Developer - Fullstack Developer"
+        }
+    ],
+
+    "profile": [
+        {
+            "id": "profile",
+            "value": "Profile"
+        },
+        {
+            "id": "profile-description",
+            "value": "Backend Developer with experience in PHP, Javascript, HTML5, CSS3 and MySQL, with experience and knowledge in frameworks such as Symfony, Laravel, NodeJs, ReactJs, jQuery and Jaws, also with knowledge in Git, basic experience with PostgresSQL, Oracle and non-relational database such as MongoDB. He has managed VM and Docker, good at working in teams and individually, proactive, likes to learn new technologies, eager to keep growing professionally and personally.<br><br>Experience as a Fullstack developer designing and adding functionality to different web pages or projects."
+        }
+    ],
+
+    "portfolio": [
+        {
+            "id": "portfolio",
+            "value": "Portfolio"
+        }
+    ],
+
+    "contact": [
+        {
+            "id": "contact-title",
+            "value": "Contact Me"
+        },
+        {
+            "id": "from",
+            "value": "From"
+        },
+        {
+            "id": "subject",
+            "value": "Subject"
+        },
+        {
+            "id": "message",
+            "value": "Message ... "
+        }
+    ]
+}
