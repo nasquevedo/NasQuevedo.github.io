@@ -160,9 +160,9 @@ const projects = () => {
 
                 html += `<div class="overlay-container">
                             <img class="img-projects" src="${item.logo}" />
-                            <div class="overlay">
+                            <div class="overlay" onclick="views('${item.name}')">
                                 <p><b>${item.name}</b></p>
-                                <a href="#" onclick="views('${item.name}')">View</a>
+                                <!--<a href="#">View</a>-->
                             </div>
                         </div>`;
             });

@@ -73,7 +73,7 @@ body {
 }
 
 #profile-description {
-    transform: translateY(150px);
+    transform: translateY(10%);
     view-timeline-name: --image;
     view-timeline-axis: block;
 
@@ -182,7 +182,7 @@ body {
         opacity: 0;
     }
     to {
-        transform: translateY(0);
+        transform: translateY(0%);
         opacity: 1;
     }
 }
@@ -194,8 +194,7 @@ body {
     }
 
     .overlay-container {
-        width: 40%;
-        height: 40%;
+        width: 20%;
         float: left;
     }
 }
