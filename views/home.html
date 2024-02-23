@@ -1,0 +1,114 @@
+<section id="home" class="container section text-center">
+    <div class="row align-items-center">
+        <div class="col">
+            <img id="profile-img" class="img-fluid" src="./img/santiago.jpg" alt="Santigo Quevedo"/>
+        </div>
+        <div id="presentation" class="col">
+            <h6 id="presentation-title" class="display-6"></h6>
+            <p id="presentation-description"></p>
+            <small id="presentation-subtitle"></small>
+            <div id="social-media">
+                <a href="https://www.linkedin.com/in/santiago-quevedo-escobar-710112114">
+                    <img class="social-media-icons" src="./img/icons/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/NasQuevedo">
+                    <img class="social-media-icons" src="./img/icons/github.png" alt="GitHub" />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="container-fluid section">
+    <div class="row">
+        <div class="col-sm-7">
+            <h6 id="profile" class="display-6"></h6>
+            <p id="profile-description"></p>
+        </div>
+        <div class="col-sm-5">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Experience</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Education</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills" type="button" role="tab" aria-controls="pills-skills" aria-selected="false" onclick="skills();">Skills</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div id="experience-list" class="list-group"></div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div id="experience-list" class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Politecnico Grancolombiano</h5>
+                            </div>
+                            <p class="mb-1">Ingenieria de Software</p>
+                            <small class="text-body-secondary"></small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">SENA - CENIGRAF</h5>
+                            </div>
+                            <p class="mb-1">Tecnologo en Analisis y Desarrollo de Sistemas de Información</p>
+                            <small class="text-body-secondary"></small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">I.E.D La Candelaria</h5>
+                            </div>
+                            <p class="mb-1">Bachiller Academico</p>
+                            <small class="text-body-secondary"></small>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0"></div>
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portflio" class="container-fluid section">
+    <div class="row">
+        <div id="projects" class="col-sm-12">
+            <h6 id="portfolio" class="display-6"></h6>
+            <!--<div id="projects"></div>-->
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container-fluid section">
+    <div class="row">
+        <div class="col-sm-4">
+            <h6 id="contact-title" class="display-6"></h6>
+            <ul>
+                <li><i class="bi bi-globe-americas"></i> Bogotá D.C, Colombia</li>
+                <li><i class="bi bi-geo-alt"></i>Carrera 3 # 8 -23 sur</li>
+                <li><i class="bi bi-telephone"></i> (+57) 321 6055462</li>
+                <li><i class="bi bi-envelope-at"></i> qesantiago@gmail.com</li>
+            </ul>
+        </div>
+        <div class="col-sm-8">
+            <form id="contact-form">
+                <div class="form-floating mb-3">
+                    <input  type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label id="from" for="floatingInput"></label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label id="subject" for="floatingPassword"></label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Your message ..." id="floatingTextarea"></textarea>
+                    <label id="message" for="floatingTextarea"></label>
+                </div>
+                <button class="btn" type="button">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>

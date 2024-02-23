@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "institute": "Institución Universitaria Politecnico Grancolombiano",
+            "title": "Ingeniero de Software",
+            "end_date": "2024"
+        },
+        {
+            "institute": "SENA - CENIGRAF",
+            "title": "Tecnologo en Analisis y Desarrollo de Sistemas de Información",
+            "year": "2014"
+        },
+        {
+            "institute": "I.E.D.I La Candelaria",
+            "title": "Bachiller Acedemico",
+            "year": "2011"
+        }
+    ]
+}

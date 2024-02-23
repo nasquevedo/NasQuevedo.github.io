@@ -1,20 +1,36 @@
-/* {
-    font-family: "Courier New";
-}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;;
+}
+
+.navbar {
+    background-color: white !important;
+    border-bottom: 2px solid black;
+}
+
+#logo {
+    font-family: 'Pacifico', sans-serif;
+}
 
 .section {
-    padding: 2rem;
+    padding: 5rem 2rem;
 }
 
 .icons {
     width: 20px !important;
 }
 
-/** Presentation Styles **/
-#presentation {
-    text-align: center !important;
+.btn {
+    border: 1px solid white !important;
+    color: white;
+    border-radius: 0px;
 }
 
+/** Presentation Styles **/
 #presentation-title {
     width: 0;
     overflow: hidden;
@@ -26,63 +42,160 @@
     animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
 }
 
+#social-media a {
+    text-decoration: none;
+}
+
+.social-media-icons {
+    width: 20px !important;
+    opacity: 0.8;
+}
+
+.social-media-icons:hover {
+    opacity: 1;
+}
+
+/** Profile **/
+#resume {
+    background-color: #0d1117;
+    color: white;
+}
+
 #profile-img {
-    width: 40% !important;
-    margin: 2rem 7rem;
+    width: 50% !important;
     border-radius: 100%;
 }
 
 #profile-img:hover {
-    border: 1px solid black;
     cursor: pointer;
-    padding: 0.2rem;
+    box-shadow: 1px 1px 20px 10px black;
+    border: 1px solid white;
 }
 
-/** Portfolio */
-.img-projects {
-    margin: 5px;
-    border: 1px solid black;
-    float: left;
-    width: 10%;
-    border-radius: 100%;
+#profile-description {
+    transform: translateY(150px);
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
 }
 
-.text-project {
-   border: 1px solid black; 
-   width: 9.5%;
-   color: white;
-   background-color: black;
-   border-radius: 100%;
-   position: absolute;
-   transform: translate(5%, 3%);
-   font-size: 12px;
-   height: 120px;
-   text-align: center;
-   opacity: 0;
-   vertical-align: middle;
-   padding: 1rem;
-   z-index: 1;
-   cursor: pointer;
-}
-
-.text-project a {
+#experience-list a {
+    background-color: transparent;
     color: white;
 }
 
-.text-project:hover {
-    opacity: 0.5;
+.show-more-skills,
+.show-less-skills {
+    cursor: pointer;
 }
 
+.show-less-skills {
+    display: none;
+}
+
+.subskills {
+    display: none;
+}
+
+/** Portfolio */
+.overlay-container {
+    width: 10%;
+    height: 40%;
+    float: left;
+    margin: 1rem;
+}
+
+.img-projects {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.overlay {
+    position: relative;
+    bottom: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 10px;
+}
+
+.overlay a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/** Contact Me **/
+#contact {
+    background-color: #10162f;
+    color: white;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact-form {
+    color: black;
+}
+
+/** Footer **/
+#footer {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+
+/** functions **/
 @keyframes typing {
     from {
-      width: 0;
+        width: 0;
     }
     to {
-      width: 100%;
+        width: 100%;
     }
-  }
-  @keyframes blink {
+}
+@keyframes blink {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/** */
+@media (max-width: 992px) {
+    #presentation-title {
+        font-size: 19px;
+    }
+
+    .overlay-container {
+        width: 40%;
+        height: 40%;
+        float: left;
+    }
+}

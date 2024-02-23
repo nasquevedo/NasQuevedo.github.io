@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "name": "Nido Baby Health",
+            "es_description": "Nido Baby Health es una pagina web estilo Landing Page con el fin de promocionar los servicios profesionales de Johana Ceron, una Doula profesional y Terapista Ocupacional con 13 años de experiencia.<br>La pagina esta separa por 4 secciones, en el home se encuentra una bienvenida con una frase personal de Johana para los visitantes y adicional el nombre de sus emprendiemineto 'Nido Baby Health', seguido de esto se encuentran los servicios profesionales a los que le usuario podra acceder, despues toda la información personal y profesional de Johana y su trayectoria y por ultimo un formulario de contacto para que los usuarios dejen su mensaje con el fin de brindar servicios o aclarar dudas.",
+            "en_description": "Nido Baby Health is a Landing Page style website to promote the professional services of Johana Ceron, a professional Doula and Occupational Therapist with 13 years of experience.<br>The page is separated by 4 sections, in the home page there is a welcome with a personal sentence of Johana for the visitors and additionally the name of her business 'Nido Baby Health', followed by the professional services that the user can access, then all the personal and professional information of Johana and her career and finally a contact form for users to leave their message in order to provide services or clarify doubts.",
+            "logo": "./img/nidobabyhealth.png",
+            "home": "./img/nidobabyhealth-home.png",
+            "url": "https://testnidobabyhealth.000webhostapp.com/",
+            "year": "2024"
+        },
+        {
+            "name": "Pet Searcher",
+            "es_description": "Pet Searcher es una pagina web creada con fines universitarios como proyecto para la material emprendimiento de base tecnologica. El fin de esta plataforma es que los usuarios que posean una mascotan podrian acceder a diversos servicios tales busqueda de la mascota en caso de perdido donde el usuario que interactua podra hacer de dos roles el que esta en busqueda o el que la encontro, por medio de la base de datos se hace un match con las mascotas encontradas y perdidas con base en sus caractiristicas. Otros servicios que pretendia darse en la plataforma son ayuda emocional en caso de perdida y educación para la mascota.<br>Desarrollada en lenguaje de pogramación PHP y diseñada con HTML5, CSS3, Bootstrap junto con una capa de javascript y jquery para la modificación del DOM y comunicación con los controladores, se usa el patron MVC y base de datos en mysql.",
+            "en_description": "Pet Searcher is a website created for university purposes as a project for technology-based entrepreneurship material. The purpose of this platform is that users who own a pet could access to various services such as search for the pet in case of lost where the user who interacts can play two roles the one who is in search or the one who found it, through the database is a match with the found and lost pets based on their characteristics. Other services intended to be provided on the platform are emotional support in case of loss and education for the pet.<br>Developed in PHP programming language and designed with HTML5, CSS3, Bootstrap along with a layer of javascript and jquery for DOM modification and communication with the controllers, using the MVC pattern and mysql database.",
+            "logo": "./img/default-logo.png",
+            "home": "./img/petsearcher-home.png",
+            "url": "https://petsearcher.000webhostapp.com/",
+            "year": "2023"
+        }
+    ]
+}

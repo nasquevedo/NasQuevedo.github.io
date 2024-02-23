@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "name": "php",
+            "percentage": "70",
+            "children": [
+                {
+                    "name": "symfony",
+                    "percentage": "50"
+                },
+                {
+                    "name": "laravel",
+                    "percentage": "20"
+                }
+            ]
+        },
+
+        {
+            "name": "javascript",
+            "percentage": "50",
+            "children": [ 
+                {
+                    "name": "jquery",
+                    "percentage": "60"
+                },
+                {
+                    "name": "nodejs",
+                    "percentage": "50"
+                },
+                {
+                    "name": "reactjs",
+                    "percentage": "40"
+                }
+            ]
+        },
+
+        {
+            "name": "html",
+            "percentage": "80"
+        },
+
+        {
+            "name": "css",
+            "percentage": "50",
+            "children": [
+                {
+                    "name": "bootstrap",
+                    "percentage": "50"
+                },
+                {
+                    "name": "materialize",
+                    "percentage": "40"
+                }
+            ]
+        },
+
+        {
+            "name": "sql",
+            "percentage": "50",
+            "children": [
+                {
+                    "name": "mysql",
+                    "percentage": "50"
+                },
+                {
+                    "name": "oracle",
+                    "percentage": "30"
+                },
+                {
+                    "name": "postgresql",
+                    "percentage": "30"
+                }
+            ]
+        }
+    ]
+}

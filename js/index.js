@@ -1,41 +1,3 @@
-var lang;
-if (localStorage.getItem('lang') === undefined || localStorage.getItem('lang') === null) {
-    localStorage.setItem('lang', 'en')
-    lang = 'en';
-} else {
-    lang = localStorage.getItem('lang');
-}
-
-const titles = () => {
-    jQuery.ajax({
-        url: "./lang/" + lang + '.json',
-        dataType: 'json',
-        success: (response) => {
-            response.navbar.forEach(item => {
-                jQuery("#" +  item.id).html(item.value);
-            });
-
-            response.home.forEach(item => {
-                jQuery("#" + item.id).html(item.value);
-            });
-
-            response.profile.forEach(item => {
-                jQuery("#" + item.id).html(item.value);
-            });
-
-            response.portfolio.forEach(item => {
-                jQuery("#" + item.id).html(item.value);
-            });
-
-            response.contact.forEach(item => {
-                jQuery("#" + item.id).html(item.value);
-            });
-        }
-    });
-};
-
-titles();
-
 const changeLang = (value) => {
     localStorage.setItem('lang', value);
     lang = value;
@@ -51,3 +13,19 @@ const changeLang = (value) => {
 
     titles();
 };
+
+changeLang(localStorage.getItem('lang'));
+
+const activeLink = (id) => {
+    jQuery(".nav-main-link").removeClass('active');
+
+    jQuery("#" + id).addClass('active');
+}
+
+const showMoreLessSkills = (id, action, buttonId) => {
+    action === 'show' ? jQuery("#" + id).css('display', 'flex') : jQuery("#" + id).hide();
+    
+    action === 'hide' ? jQuery("#" + buttonId.replace('less', 'more')).show() : jQuery("#" + buttonId.replace('more', 'less')).show();
+
+    jQuery("#" + buttonId).hide();
+}
