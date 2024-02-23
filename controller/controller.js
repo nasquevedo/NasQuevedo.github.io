@@ -5,16 +5,18 @@ const views = (view) => {
         dataType: "html",
         success: response => {
             jQuery("#main").html(response);
+            localStorage.setItem('module', 'home');
 
             if (view !== 'home') {
                 project(view);
+                localStorage.setItem('module', view);
             }
 
         }
     });
 }
 
-views('home');
+views(currentModule);
 
 const titles = () => {
     jQuery.ajax({
@@ -123,21 +125,27 @@ const project = (name) => {
         success: response => {
 
             const project = response.data.filter(item => {
-                console.log(item);
-                console.log(name);
                 return item.name === name;
             });
 
             let html = "";
+            let tech = "";
             project.forEach(item => {
                 html +=  `<h1 id="project-title">${item.name}</h1>
                         <p id="project-description">${item[`${lang}_description`]}</p>
                         <img class="img-fluid" src="${item.home}" alt="${item.name}" />
-                        <a href="${item.url}">Visitar sitio</a>`
+                        <a href="${item.url}">Visitar sitio</a>`;
+
+                
+                item.technologies.split(" ").forEach(item => {
+                    tech += `<img class="tecnology-icon" src="./img/icons/${item}.png" alt="${item}" title="${item}" />`;
+                });
+                
+                console.log(tech);
             });
 
             jQuery("#project").append(html);
-            
+            jQuery("#technologies").append(tech);
         }
     });
 };
@@ -160,8 +168,6 @@ const projects = () => {
             });
 
             jQuery("#projects").html(html);
-
-            
         }
     });
 }

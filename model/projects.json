@@ -7,7 +7,8 @@
             "logo": "./img/nidobabyhealth.png",
             "home": "./img/nidobabyhealth-home.png",
             "url": "https://testnidobabyhealth.000webhostapp.com/",
-            "year": "2024"
+            "year": "2024",
+            "technologies": "php javascript html css mysql"
         },
         {
             "name": "Pet Searcher",
@@ -16,7 +17,18 @@
             "logo": "./img/default-logo.png",
             "home": "./img/petsearcher-home.png",
             "url": "https://petsearcher.000webhostapp.com/",
-            "year": "2023"
+            "year": "2023",
+            "technologies": "php javascript html css mysql"
+        },
+        {
+            "name": "Gestion Gastos",
+            "es_description": "Gestion Gastos es una aplicación que se creo con fines universitarios para una materia llamada integración continua, el fin de la aplicación es que los usuarios puedan gestionar su presupuesto mes a mes e incluso anualmente con el fin de que tengan mejoras habitos financieros, puedan ahorra y ver en que estan gastos su dinero, verificar que no esten gastando en gastos adicionales o 'Gastos Hormiga'.<br>El programa basicamente es una pagina web desarrollada en dos frentes, el frontend, diseñado en HTML5, CSS3, Javascript y usando jQuery, por el otro lado esta el backend desarrollado con nodejs y express.js con el fin de crear un API donde se puedan generar las transacciones a base de datos la cual es no relacional, el gestor de dicha base de datos es MongoDB con la ayuda de una libreria llamada mongoose.",
+            "en_description": "Gestion Gastos is an application that was created for university purposes for a subject called continuous integration, the purpose of the application is that users can manage their budget month to month and even annually in order to have better financial habits, they can save and see where they are spending their money, verify that they are not spending on additional expenses or 'Ant Spending'.<br>The program is basically a web page developed on two fronts, the frontend, designed in HTML5, CSS3, Javascript and using jQuery, on the other side is the backend developed with nodejs and express.js in order to create an API where you can generate transactions to database which is non-relational, the manager of the database is MongoDB with the help of a library called mongoose.",
+            "logo":"./img/default-logo.png",
+            "home": "./img/gestiongastos-home.png",
+            "url": "https://gestioncontrolgastos.000webhostapp.com/es/login.html",
+            "year": "2023",
+            "technologies": "javascript html css"
         }
     ]
 }
