@@ -89,7 +89,7 @@ const skills = () => {
                             `<div class='row skill-row'>` + 
                                 `<div class="col-sm-1">` +
                                     `<i id="show-less-${item.name}" class="show-less-skills bi bi-caret-down" onclick="showMoreLessSkills('${item.name}-children', 'hide', this.id);"></i>` +
-                                    `<i id="show-more-${item.name}" class="show-more-skills bi bi-caret-right" onclick="showMoreLessSkills('${item.name}-children', 'show', this.id);"></i>` +
+                                    `<i id="show-more-${item.name}" class="show-more-skills bi bi-caret-right" onclick="showMoreLessSkills('${item.name}-children', 'show', this.id); skillChildren('${item.name}');"></i>` +
                                 `</div>` +   
                                 `<div class="col-sm-1">` + 
                                     `<img class="icons" src="./img/icons/${item.name}.png" title="${item.name}" alt="${item.name}" />` +
@@ -106,16 +106,16 @@ const skills = () => {
                 if (item.children !== undefined) {
                     html += `<div id="${item.name}-children" class="row subskills">`;
 
-                    item.children.forEach((children) => {
+                    item.children.forEach((child) => {
                         html += `<div class="row children-row">
                                     <div class="col-sm-1">
                                     </div>
                                     <div class="col-sm-1">
-                                        <img class="icons" src="./img/icons/${children.name}.png" title="${children.name}" alt="${children.name}" />
+                                        <img class="icons" src="./img/icons/${child.name}.png" title="${child.name}" alt="${child.name}" />
                                     </div>
                                     <div class="col-sm-10">
-                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
+                                        <div id="progress-${child.name}" class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div id="progress-bar-${child.name}" class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
                                         </div>
                                     </div>
                                 </div>`;
@@ -133,7 +133,6 @@ const skills = () => {
 
             response.data.forEach((item) => {
                 setInterval((t, p)=> {
-
                     if (cont[t] <= p) {
                         jQuery("#progress-" + t).attr("aria-valuenow", cont[t]);
                         jQuery("#progress-bar-" + t).attr("style", `width: ${cont[t]}%`);
@@ -143,29 +142,43 @@ const skills = () => {
                     }
                 }, 50, item.name, item.percentage);
             });
-
-            
-            // this is working
-            /*
-            let tech = 'php';
-            let percentage = 70;
-            let cont = 0;
-
-            setInterval((t, p)=> {
-
-                if (cont <= p) {
-                    console.log(cont, p, t);
-                    jQuery("#progress-" + t).attr("aria-valuenow", cont);
-                    jQuery("#progress-bar-" + t).attr("style", `width: ${cont}%`);
-                    cont++;
-                } else {
-                    clearInterval();
-                }
-            }, 500, tech, percentage);*/
-            
         }
     });
 };
+
+const skillChildren = (father) => {
+    jQuery.ajax({
+        url: "./model/skills.json",
+        dataType: "json",
+        success: (response) => {
+            const skill = response.data.filter(item => {
+                return item.name === father
+            });
+
+            console.log(skill);
+
+            if (skill[0].children !== undefined) {
+                const cont = new Array();
+
+                skill[0].children.forEach(child => {
+                    cont[child.name] = child.percentage;
+
+                    setInterval((t, p)=> {
+
+                        if (cont[t] <= p) {
+                            jQuery("#progress-" + t).attr("aria-valuenow", cont[t]);
+                            jQuery("#progress-bar-" + t).attr("style", `width: ${cont[t]}%`);
+                            cont[t]++;
+                        } else {
+                            clearInterval();
+                        }
+                    }, 50, child.name, child.percentage);
+                });
+            }
+
+        }
+    });
+}
 
 const project = (name) => {
     jQuery.ajax({
