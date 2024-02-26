@@ -17,11 +17,13 @@ body {
 }
 
 .section {
-    padding: 5rem 2rem;
+    padding: 8rem 2rem;
 }
 
 .icons {
     width: 20px !important;
+    border: 1px solid white;
+    border-radius: 100%;
 }
 
 .btn {
@@ -81,9 +83,23 @@ body {
     animation-name: show;
 }
 
-#experience-list a {
+#experience-list a,
+#education-list a{
     background-color: transparent;
     color: white;
+}
+
+#experience-list small,
+#education-list small {
+    color: white !important;
+}
+
+.skill-row {
+    padding: 0.1rem 0;
+}
+
+.children-row {
+    padding: 0.1rem 0;
 }
 
 .show-more-skills,
@@ -97,6 +113,10 @@ body {
 
 .subskills {
     display: none;
+}
+
+.progress {
+    height: 10px;
 }
 
 /** Portfolio */
@@ -159,6 +179,17 @@ body {
     background-color: black;
     color: white;
     padding: 2rem;
+}
+
+.footer-icon {
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 100%;
+    opacity: 0.5;
+}
+
+.footer-icon:hover {
+    opacity: 1;
 }
 
 

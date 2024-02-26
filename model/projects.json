@@ -7,8 +7,9 @@
             "logo": "./img/nidobabyhealth.png",
             "home": "./img/nidobabyhealth-home.png",
             "url": "https://testnidobabyhealth.000webhostapp.com/",
+            "repository": "https://github.com/NasQuevedo/NidoBabyHealth",
             "year": "2024",
-            "technologies": "php javascript html css mysql"
+            "technologies": "php javascript jquery html css mysql"
         },
         {
             "name": "Pet Searcher",
@@ -17,8 +18,9 @@
             "logo": "./img/default-logo.png",
             "home": "./img/petsearcher-home.png",
             "url": "https://petsearcher.000webhostapp.com/",
+            "repository": "https://github.com/NasQuevedo/pet_searcher",
             "year": "2023",
-            "technologies": "php javascript html css mysql"
+            "technologies": "php javascript jquery html css mysql"
         },
         {
             "name": "Gestion Gastos",
@@ -27,8 +29,10 @@
             "logo":"./img/default-logo.png",
             "home": "./img/gestiongastos-home.png",
             "url": "https://gestioncontrolgastos.000webhostapp.com/es/login.html",
+            "repository": "https://github.com/NasQuevedo/gestion_gastos_frontend",
+            "backend_repository": "https://github.com/NasQuevedo/gestion_gastos_backend",
             "year": "2023",
-            "technologies": "javascript html css"
+            "technologies": "javascript html css jquery nodejs mongodb"
         }
     ]
 }

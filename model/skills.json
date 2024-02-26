@@ -71,6 +71,32 @@
                     "percentage": "30"
                 }
             ]
+        },
+
+        {
+            "name": "nosql",
+            "percentage": "20",
+            "children": [
+                {
+                    "name": "mongodb",
+                    "percentage": "20"
+                }
+            ]
+        },
+
+        {
+            "name": "virtualmachine",
+            "percentage": "30",
+            "children": [
+                {
+                    "name": "virtualbox",
+                    "percentage": "30"
+                },
+                {
+                    "name": "docker",
+                    "percentage": "40"
+                }
+            ]
         }
     ]
 }

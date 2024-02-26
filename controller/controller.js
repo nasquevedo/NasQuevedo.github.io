@@ -1,3 +1,7 @@
+jQuery(document).ready(() => {
+    views(currentModule);
+});
+
 const views = (view) => {
     let module = (view === 'home') ? view : 'project';
     jQuery.ajax({
@@ -12,11 +16,12 @@ const views = (view) => {
                 localStorage.setItem('module', view);
             }
 
+            titles();
+            experience();
+            projects();
         }
     });
-}
-
-views(currentModule);
+};
 
 const titles = () => {
     jQuery.ajax({
@@ -29,8 +34,6 @@ const titles = () => {
         }
     });
 };
-
-titles();
 
 const experience = () => {
     jQuery.ajax({
@@ -51,16 +54,25 @@ const experience = () => {
             jQuery("#experience-list").html(html);
         }
     });
-}
-
-experience();
+};
 
 const education = () => {
     jQuery.ajax({
         url: "./model/education.json",
         dataType: "json",
-        success: reponse => {
-            
+        success: response => {
+            let html = "";
+            response.data.forEach(item => {
+                html += `<a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">${item.institute}</h5>
+                            </div>
+                            <p class="mb-1">${item.title}</p>
+                            <small class="text-body-secondary">${item.year}</small>
+                        </a>`;
+            });   
+
+            jQuery("#education-list").html(html);
         }
     });
 };
@@ -70,10 +82,11 @@ const skills = () => {
         url: "./model/skills.json",
         dataType: "json",
         success: (response) => {
-            html = "";
+            let html = "";
+            const cont = new Array();
             response.data.forEach((item) => {
                 html += `<div class="row align-items-center">` + 
-                            `<div class='row'>` + 
+                            `<div class='row skill-row'>` + 
                                 `<div class="col-sm-1">` +
                                     `<i id="show-less-${item.name}" class="show-less-skills bi bi-caret-down" onclick="showMoreLessSkills('${item.name}-children', 'hide', this.id);"></i>` +
                                     `<i id="show-more-${item.name}" class="show-more-skills bi bi-caret-right" onclick="showMoreLessSkills('${item.name}-children', 'show', this.id);"></i>` +
@@ -82,38 +95,74 @@ const skills = () => {
                                     `<img class="icons" src="./img/icons/${item.name}.png" title="${item.name}" alt="${item.name}" />` +
                                 `</div>` +
                                 `<div class="col-sm-10">` +
-                                    `<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="${item.percentage}" aria-valuemin="0" aria-valuemax="100">` +
-                                        `<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: ${item.percentage}%"></div>` +
+                                    `<div id="progress-${item.name}" class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">` +
+                                        `<div id="progress-bar-${item.name}" class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>` +
                                     `</div>` +
                                 `</div>` +
                             `</div>`; 
-                        
+
+                cont[item.name] = 0;       
 
                 if (item.children !== undefined) {
                     html += `<div id="${item.name}-children" class="row subskills">`;
 
                     item.children.forEach((children) => {
-                        html += `<div class="row">
+                        html += `<div class="row children-row">
                                     <div class="col-sm-1">
                                     </div>
                                     <div class="col-sm-1">
                                         <img class="icons" src="./img/icons/${children.name}.png" title="${children.name}" alt="${children.name}" />
                                     </div>
                                     <div class="col-sm-10">
-                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="${children.percentage}" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: ${children.percentage}%"></div>
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
                                         </div>
                                     </div>
                                 </div>`;
                             
                     }); 
-                    html += `</div>`;  
+                    html += `</div>`;
                 }
 
                 html += `</div>`;
+
+                
             });
 
             jQuery("#pills-skills").html(html);
+
+            response.data.forEach((item) => {
+                setInterval((t, p)=> {
+
+                    if (cont[t] <= p) {
+                        jQuery("#progress-" + t).attr("aria-valuenow", cont[t]);
+                        jQuery("#progress-bar-" + t).attr("style", `width: ${cont[t]}%`);
+                        cont[t]++;
+                    } else {
+                        clearInterval();
+                    }
+                }, 50, item.name, item.percentage);
+            });
+
+            
+            // this is working
+            /*
+            let tech = 'php';
+            let percentage = 70;
+            let cont = 0;
+
+            setInterval((t, p)=> {
+
+                if (cont <= p) {
+                    console.log(cont, p, t);
+                    jQuery("#progress-" + t).attr("aria-valuenow", cont);
+                    jQuery("#progress-bar-" + t).attr("style", `width: ${cont}%`);
+                    cont++;
+                } else {
+                    clearInterval();
+                }
+            }, 500, tech, percentage);*/
+            
         }
     });
 };
@@ -131,14 +180,40 @@ const project = (name) => {
             let html = "";
             let tech = "";
             project.forEach(item => {
+
+                const titles = [ 
+                    'Visitar Sitio Web',
+                    'Visitar Repositorio',
+                    'Visitar Repositorio Backend'
+                ]; 
+
+                if (lang === 'en') {
+                    titles[0] = 'Visit Web Site';
+                    titles[1] = 'Visit Repository';
+                    titles[2] = 'Visit Backend Repository';
+                }
+
                 html +=  `<h1 id="project-title">${item.name}</h1>
                         <p id="project-description">${item[`${lang}_description`]}</p>
                         <img class="img-fluid" src="${item.home}" alt="${item.name}" />
-                        <a href="${item.url}">Visitar sitio</a>`;
+                        <div class="col-sm-12 text-center">
+                            <a href="${item.url}" target="_blank">
+                                <img class="icons" src="./img/icons/world-wide-web.png" alt="${titles[0]}" title="${titles[0]}" />
+                            </a>
+                            <a href="${item.repository}" target="_blank">
+                                <img class="icons" src="./img/icons/github.png" alt="${titles[1]}" title="${titles[1]}" />
+                            </a>`;
+                        
+                if (item.backend_repository !== '') {
+                    html += `<a href="${item.backend_repository}" target="_blank">
+                        <img class="icons" src="./img/icons/github.png" alt="${titles[2]}" title="${titles[2]}" />
+                    </a>`;
+                }
 
-                
+                html += "</div>";
+
                 item.technologies.split(" ").forEach(item => {
-                    tech += `<img class="tecnology-icon" src="./img/icons/${item}.png" alt="${item}" title="${item}" />`;
+                    tech += `<img class="technology-icon" src="./img/icons/${item}.png" alt="${item}" title="${item}" />`;
                 });
                 
                 console.log(tech);
@@ -170,6 +245,4 @@ const projects = () => {
             jQuery("#projects").html(html);
         }
     });
-}
-
-projects();
+};

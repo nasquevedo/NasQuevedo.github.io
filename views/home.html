@@ -1,11 +1,13 @@
-<section id="home" class="container section text-center">
+<section id="home" class="container section text-center" aria-hidden="true">
     <div class="row align-items-center">
         <div class="col">
             <img id="profile-img" class="img-fluid" src="./img/santiago.jpg" alt="Santigo Quevedo"/>
         </div>
         <div id="presentation" class="col">
-            <h6 id="presentation-title" class="display-6"></h6>
-            <p id="presentation-description"></p>
+            <h6 id="presentation-title" class="display-6" aria-hidden="true"></h6>
+            <p id="presentation-description">
+                <span class="placeholder col-6"></span>
+            </p>
             <small id="presentation-subtitle"></small>
             <div id="social-media">
                 <a href="https://www.linkedin.com/in/santiago-quevedo-escobar-710112114">
@@ -31,7 +33,7 @@
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Experience</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Education</button>
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" onclick="education();">Education</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills" type="button" role="tab" aria-controls="pills-skills" aria-selected="false" onclick="skills();">Skills</button>
@@ -42,29 +44,7 @@
                     <div id="experience-list" class="list-group"></div>
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                    <div id="experience-list" class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Politecnico Grancolombiano</h5>
-                            </div>
-                            <p class="mb-1">Ingenieria de Software</p>
-                            <small class="text-body-secondary"></small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">SENA - CENIGRAF</h5>
-                            </div>
-                            <p class="mb-1">Tecnologo en Analisis y Desarrollo de Sistemas de Información</p>
-                            <small class="text-body-secondary"></small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">I.E.D La Candelaria</h5>
-                            </div>
-                            <p class="mb-1">Bachiller Academico</p>
-                            <small class="text-body-secondary"></small>
-                        </a>
-                    </div>
+                    <div id="education-list" class="list-group"></div>
                 </div>
                 <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0"></div>
                 <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
