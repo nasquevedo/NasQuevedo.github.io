@@ -57,6 +57,18 @@
         {
             "id": "message",
             "value": "Message ... "
+        },
+        {
+            "id": "experience-pill",
+            "value": "Experience"
+        },
+        {
+            "id": "education-pill",
+            "value": "Education"
+        },
+        {
+            "id": "skills-pill",
+            "value": "Skills"
         }
     ]
 }

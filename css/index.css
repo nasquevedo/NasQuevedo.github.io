@@ -16,6 +16,10 @@ body {
     font-family: 'Pacifico', sans-serif;
 }
 
+#logo:hover {
+    text-shadow: 12px 6px 5px #09439a;
+}
+
 .section {
     padding: 8rem 2rem;
 }
@@ -93,6 +97,11 @@ body {
 #education-list small {
     color: white !important;
 }
+
+/*:where(#experience-list, #education-list) :where(a, small) {
+    color: white !important;
+    background-color: transparent !important;
+}*/
 
 .skill-row {
     padding: 0.1rem 0;

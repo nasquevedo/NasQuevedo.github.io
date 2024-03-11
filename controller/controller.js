@@ -1,5 +1,7 @@
 jQuery(document).ready(() => {
-    views(currentModule);
+    //views(currentModule);
+    experience();
+    projects();
 });
 
 const views = (view) => {
@@ -17,8 +19,7 @@ const views = (view) => {
             }
 
             titles();
-            experience();
-            projects();
+            
         }
     });
 };
@@ -155,8 +156,6 @@ const skillChildren = (father) => {
                 return item.name === father
             });
 
-            console.log(skill);
-
             if (skill[0].children !== undefined) {
                 const cont = new Array();
 
@@ -217,7 +216,7 @@ const project = (name) => {
                                 <img class="icons" src="./img/icons/github.png" alt="${titles[1]}" title="${titles[1]}" />
                             </a>`;
                         
-                if (item.backend_repository !== '') {
+                if (item.backend_repository !== undefined) {
                     html += `<a href="${item.backend_repository}" target="_blank">
                         <img class="icons" src="./img/icons/github.png" alt="${titles[2]}" title="${titles[2]}" />
                     </a>`;
@@ -247,7 +246,7 @@ const projects = () => {
             response.data.forEach(item => {
 
                 html += `<div class="overlay-container">
-                            <img class="img-projects" src="${item.logo}" />
+                            <img class="img-projects" src="${item.logo}" alt="${item.name}" title="${item.name}"/>
                             <div class="overlay" onclick="views('${item.name}')">
                                 <p><b>${item.name}</b></p>
                                 <!--<a href="#">View</a>-->

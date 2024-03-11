@@ -9,7 +9,7 @@
             "url": "https://testnidobabyhealth.000webhostapp.com/",
             "repository": "https://github.com/NasQuevedo/NidoBabyHealth",
             "year": "2024",
-            "technologies": "php javascript jquery html css mysql"
+            "technologies": "php javascript jquery html css bootstrap mysql"
         },
         {
             "name": "Pet Searcher",
@@ -20,7 +20,7 @@
             "url": "https://petsearcher.000webhostapp.com/",
             "repository": "https://github.com/NasQuevedo/pet_searcher",
             "year": "2023",
-            "technologies": "php javascript jquery html css mysql"
+            "technologies": "php javascript jquery html css bootstrap mysql"
         },
         {
             "name": "Gestion Gastos",
