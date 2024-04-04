@@ -1,0 +1,25 @@
+{
+    "short_name": "portfolio",
+    "name": "Portfolio: Santiago's Portfolio",
+    "icons": [
+        {
+            "src": "/img/icons/linkedin.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/img/icons/github.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "id": "index.html",
+    "start_url": "index.html",
+    "scope": "/",
+    "theme_color": "white",
+    "description": "Santiago's portfolio",
+    "display": "fullscreen",
+    "background_color": "white"
+}

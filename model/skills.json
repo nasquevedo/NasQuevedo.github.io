@@ -6,7 +6,7 @@
             "children": [
                 {
                     "name": "symfony",
-                    "percentage": "50"
+                    "percentage": "40"
                 },
                 {
                     "name": "laravel",
@@ -21,7 +21,7 @@
             "children": [ 
                 {
                     "name": "jquery",
-                    "percentage": "60"
+                    "percentage": "50"
                 },
                 {
                     "name": "nodejs",

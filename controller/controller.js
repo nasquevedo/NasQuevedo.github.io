@@ -227,8 +227,6 @@ const project = (name) => {
                 item.technologies.split(" ").forEach(item => {
                     tech += `<img class="technology-icon" src="./img/icons/${item}.png" alt="${item}" title="${item}" />`;
                 });
-                
-                console.log(tech);
             });
 
             jQuery("#project").append(html);
@@ -258,3 +256,21 @@ const projects = () => {
         }
     });
 };
+
+const send = (from, subject, message) => {
+    const to = "qesantiago@gmail.com";
+    fetch('https://react-http-6c8c0-default-rtdb.firebaseio.com/emails', {
+        method: 'GET',
+        data: JSON.stringify({
+            to,
+            from,
+            subject,
+            message
+        }),
+        mode: 'no-cors'
+    }).then(response => {
+        return response.json();
+    }).then(res => {
+        console.log(res);
+    });
+}
