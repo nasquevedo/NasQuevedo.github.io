@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "lang": "en",
+            "native": "Native: Spanish",
+            "others": [
+                {
+                    "name": "English",
+                    "listening": "B2",
+                    "reading": "B2",
+                    "speaking": "B2"
+                }
+            ]
+        },
+        {
+            "lang": "es",
+            "native": "Nativo: Español",
+            "others": [
+                {
+                    "name": "Ingles",
+                    "listening": "B2",
+                    "reading": "B2",
+                    "speaking": "B2"
+                }
+            ]
+        }
+    ]
+}

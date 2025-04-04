@@ -1,100 +1,98 @@
 {
     "data": [
         {
-            "name": "php",
-            "percentage": "70",
-            "children": [
+            "id": "stack",
+            "name": "stack",
+            "items": [
                 {
-                    "name": "symfony",
-                    "percentage": "40"
+                    "name": "PHP"
                 },
                 {
-                    "name": "laravel",
-                    "percentage": "20"
+                    "name": "HTML5"
+                },
+                {
+                    "name": "CSS3"
+                },
+                {
+                    "name": "Javascript"
+                },
+                {
+                    "name": "MySQL"
                 }
             ]
         },
-
         {
-            "name": "javascript",
-            "percentage": "50",
-            "children": [ 
+            "id": "backend",
+            "name": "Back-end Frameworks",
+            "items": [ 
                 {
-                    "name": "jquery",
-                    "percentage": "50"
+                    "name": "Symfony"
                 },
                 {
-                    "name": "nodejs",
-                    "percentage": "50"
+                    "name": "Laravel"
                 },
                 {
-                    "name": "reactjs",
-                    "percentage": "40"
+                    "name": "NodeJs"
                 }
             ]
         },
-
         {
-            "name": "html",
-            "percentage": "80"
-        },
-
-        {
-            "name": "css",
-            "percentage": "50",
-            "children": [
+            "id": "frontend",
+            "name": "Front-End Frameworks",
+            "items": [
                 {
-                    "name": "bootstrap",
-                    "percentage": "50"
+                    "name": "ReactJs"
                 },
                 {
-                    "name": "materialize",
-                    "percentage": "40"
+                    "name": "jQuery"
+                },
+                {
+                    "name": "Bootstrap"
                 }
             ]
         },
-
         {
-            "name": "sql",
-            "percentage": "50",
-            "children": [
+            "id": "sql",
+            "name": "SQL",
+            "items": [
                 {
-                    "name": "mysql",
-                    "percentage": "50"
+                    "name": "PostgreSQL"
                 },
                 {
-                    "name": "oracle",
-                    "percentage": "30"
-                },
-                {
-                    "name": "postgresql",
-                    "percentage": "30"
+                    "name": "Oracle"
                 }
             ]
         },
-
         {
-            "name": "nosql",
-            "percentage": "20",
-            "children": [
+            "id": "nosql",
+            "name": "NoSQL",
+            "items": [
                 {
-                    "name": "mongodb",
-                    "percentage": "20"
+                    "name": "MongoDB"
                 }
             ]
         },
-
         {
-            "name": "virtualmachine",
-            "percentage": "30",
-            "children": [
+            "id": "version-control",
+            "name": "Version Control",
+            "items": [
                 {
-                    "name": "virtualbox",
-                    "percentage": "30"
+                    "name": "Git"
                 },
                 {
-                    "name": "docker",
-                    "percentage": "40"
+                    "name": "GitHub"
+                }
+            ]
+        },
+        {
+            "id": "vm",
+            "name": "VM",
+            "items": [
+                {
+                    "name": "Virtualbox"
+                },
+                {
+                    "name": "Docker"
                 }
             ]
         }
