@@ -10,6 +10,9 @@ body {
 .navbar {
     background-color: white !important;
     border-bottom: 2px solid black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 #logo {
@@ -21,13 +24,15 @@ body {
 }
 
 .section {
-    padding: 8rem 2rem;
+    padding: 5rem 2rem;
+    position: relative;
 }
 
 .icons {
     width: 20px !important;
     border: 1px solid white;
     border-radius: 100%;
+    color: white;
 }
 
 .btn {
@@ -37,6 +42,16 @@ body {
 }
 
 /** Presentation Styles **/
+#main {
+    background-color: #10162f;
+    color: white;
+}
+
+#home {
+    max-width: 100%;
+    width: 100%;
+}
+
 #presentation-title {
     width: 0;
     overflow: hidden;
@@ -50,6 +65,7 @@ body {
 
 #social-media a {
     text-decoration: none;
+    fill: #ffffff;
 }
 
 .social-media-icons {
@@ -65,7 +81,7 @@ body {
 #resume {
     background-color: #0d1117;
     color: white;
-    clip-path: polygon(100% 0, 100% 90%, 0% 100%, 0% 10%);
+    /* clip-path: polygon(100% 0, 100% 90%, 0% 100%, 0% 10%); */
 }
 
 #profile-img {
@@ -88,49 +104,12 @@ body {
     animation-name: show;
 }
 
-#pills-tab li button {
-    color: white !important;
-}
+/** Skills*/
 
-#experience-list a,
-#education-list a{
-    background-color: transparent;
-    color: white;
-}
-
-#experience-list small,
-#education-list small {
-    color: white !important;
-}
-
-/*:where(#experience-list, #education-list) :where(a, small) {
-    color: white !important;
-    background-color: transparent !important;
-}*/
-
-.skill-row {
-    padding: 0.1rem 0;
-}
-
-.children-row {
-    padding: 0.1rem 0;
-}
-
-.show-more-skills,
-.show-less-skills {
-    cursor: pointer;
-}
-
-.show-less-skills {
-    display: none;
-}
-
-.subskills {
-    display: none;
-}
-
-.progress {
-    height: 10px;
+.skill-pills {
+    border: 1px solid black;
+    margin: 1px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 /** Portfolio */
@@ -186,24 +165,6 @@ body {
     cursor: pointer;
 }
 
-/** Contact Me **/
-#contact {
-    background-color: #10162f;
-    color: white;
-}
-
-#contact ul {
-    list-style: none;
-}
-
-#contact-form {
-    color: black;
-}
-
-#message-input {
-    height: 100px;
-}
-
 /** Footer **/
 #footer {
     background-color: black;
@@ -220,15 +181,6 @@ body {
 
 .footer-icon:hover {
     opacity: 1;
-}
-
-/** Errors **/
-.errors {
-    color: red;
-}
-
-.input-errors {
-    border-color: red;
 }
 
 /** functions **/

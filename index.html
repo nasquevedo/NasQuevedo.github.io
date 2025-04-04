@@ -23,18 +23,24 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-center" style="--bs-scroll-height: 100px;">
                             <li class="nav-item active">
-                                <a id="home-link" class="nav-link nav-main-link active" aria-current="page" href="" onclick="activeLink(this.id); views('home');"></a>
+                                <a id="home-link" class="nav-link nav-main-link active" aria-current="page" href="" onclick="activeLink(this.id);"></a>
                             </li>
                             <li class="nav-item">
                                 <a id="resume-link" class="nav-link nav-main-link" href="#resume" onclick="activeLink(this.id);"></a>
                             </li>
                             <li class="nav-item">
-                                <a id="portfolio-link" class="nav-link nav-main-link" href="#portfolio" onclick="activeLink(this.id);"></a> 
+                                <a id="experience-link" class="nav-link nav-main-link" href="#experience" onclick="activeLink(this.id);"></a>
                             </li>
                             <li class="nav-item">
-                                <a id="contact-link" class="nav-link nav-main-link" href="#contact" onclick="activeLink(this.id);"></a>
+                                <a id="skills-link" class="nav-link nav-main-link" href="#skills" onclick="activeLink(this.id);"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="languages-link" class="nav-link nav-main-link" href="#languages" onclick="activeLink(this.id);"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="portfolio-link" class="nav-link nav-main-link" href="#portfolio" onclick="activeLink(this.id);"></a> 
                             </li>
                         </ul>
                         <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
@@ -63,93 +69,34 @@
                 </div>
             </nav>
         </header>
-
-        <div id="main">
-            <section id="home" class="container section text-center">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <img id="profile-img" class="img-fluid" src="./img/santiago.webp" alt="Santigo Quevedo"/>
-                    </div>
-                    <div id="presentation" class="col-sm-6">
-                        <h6 id="presentation-title" class="display-6"></h6>
-                        <p id="presentation-description">
-                            <span class="placeholder col-6"></span>
-                        </p>
-                        <small id="presentation-subtitle"></small>
-                        <div id="social-media">
-                            <a href="https://www.linkedin.com/in/santiago-quevedo-escobar-710112114" target="_blank">
-                                <img class="social-media-icons" src="./img/icons/linkedin.png" alt="LinkedIn" />
-                            </a>
-                            <a href="https://github.com/NasQuevedo" target="_blank">
-                                <img class="social-media-icons" src="./img/icons/github.png" alt="GitHub" />
-                            </a>
+        
+        <div class="row">
+            <div id="main" class="col-sm-3">
+                <section id="home" class="container section text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12">
+                            <img id="profile-img" class="img-fluid" src="./img/santiago.webp" alt="Santigo Quevedo"/>
                         </div>
                     </div>
-                </div>
-            </section>
-            
-            <section id="resume" class="container-fluid section">
-                <div class="row">
-                    <div class="col-sm-7">
-                        <h6 id="profile" class="display-6"></h6>
-                        <p id="profile-description"></p>
-                    </div>
-                    <div class="col-sm-5">
-                        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button id="experience-pill" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"></button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button id="education-pill" class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" onclick="education();"></button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button id="skills-pill" class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills" type="button" role="tab" aria-controls="pills-skills" aria-selected="false" onclick="skills();"></button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                <div id="experience-list" class="list-group"></div>
+                    <div class="row align-items-center">
+                        <div id="presentation" class="col-sm-12">
+                            <h6 id="presentation-title" class="display-6"></h6>
+                            <p id="presentation-description">
+                                <span class="placeholder col-6"></span>
+                            </p>
+                            <small id="presentation-subtitle"></small>
+                            <div id="social-media">
+                                <a href="https://www.linkedin.com/in/santiago-quevedo-escobar-710112114" target="_blank">
+                                    <img class="social-media-icons" src="./img/icons/linkedin.png" alt="LinkedIn" />
+                                </a>
+                                <a href="https://github.com/NasQuevedo" target="_blank">
+                                    <img class="social-media-icons" src="./img/icons/github.png" alt="GitHub" />
+                                </a>
                             </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                <div id="education-list" class="list-group"></div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0"></div>
-                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
                         </div>
                     </div>
-                </div>
-            </section>
-            
-            <section id="portflio" class="container-fluid section">
-                <div class="row">
-                    <h6 id="portfolio" class="display-6"></h6>
-                    <div id="projects" class="col-sm-12"></div>
-                </div>
-            </section>
-            
-            <section id="contact" class="container-fluid section">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <form id="contact-form">
-                            <span id="error" class="errors"></span>
-                            <span id="successs"></span>
-                            <div class="form-floating mb-3">
-                                <input  type="email" class="form-control" id="from-input" placeholder="name@example.com" onkeypress="cleanErrors(this.id);">
-                                <label id="from" for="from-input"></label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="subject-input" placeholder="Password" onkeypress="cleanErrors(this.id);">
-                                <label id="subject" for="subject-input"></label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Your message ..." id="message-input" onkeypress="cleanErrors(this.id);"></textarea>
-                                <label id="message" for="message-input"></label>
-                            </div>
-                            <button class="btn" type="button" onclick="sendForm();">Enviar</button>
-                        </form>
-                    </div>
-                    <div class="col-sm-4">
-                        <h6 id="contact-title" class="display-6"></h6>
+                    <hr>
+                    <div id="contact">
                         <ul>
                             <li><i class="bi bi-globe-americas"></i> Bogotá D.C, Colombia</li>
                             <li><i class="bi bi-geo-alt"></i>Carrera 3 # 8 -23 sur</li>
@@ -157,8 +104,77 @@
                             <li><i class="bi bi-envelope-at"></i> qesantiago@gmail.com</li>
                         </ul>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
+            
+            <div class="col-sm-9">
+                <section id="resume" class="container-fluid section">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h6 id="profile" class="display-6"></h6>
+                            <p id="profile-description"></p>
+                        </div>
+                    </div>
+                </section>
+                <section class="container-fluid section">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button id="experience-pill" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button id="education-pill" class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" onclick="education();"></button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div id="experience-list" class="list-group"></div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div id="education-list" class="list-group"></div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0"></div>
+                                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="skill" class="container-fluid section">
+                    <div class="row">
+                        <h6 class="display-6" id="skill-section"></h6>
+                        <div id="skills"></div>
+                    </div>
+                </section>
+
+                <section id="language" class="container-fluid section">
+                    <div class="row">
+                        <h6 class="display-6" id="languages"></h6>
+                        <div id="language-section">
+                            <p id="native"></p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Language</th>
+                                        <th>Listeing</th>
+                                        <th>Reading</th>
+                                        <th>Speaking</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="language-table-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="portflio" class="container-fluid section">
+                    <div class="row">
+                        <h6 id="portfolio" class="display-6"></h6>
+                        <div id="projects" class="col-sm-12"></div>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <footer id="footer">

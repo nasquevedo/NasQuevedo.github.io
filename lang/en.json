@@ -1,26 +1,29 @@
 {
     "data": 
     [
-        
-        {
-            "id": "home-link",
-            "value": "Home"
-        },
         {
             "id": "resume-link",
             "value": "Resume"
+        },
+        {
+            "id": "experience-link",
+            "value": "Experience"
+        },
+        {
+            "id": "skills-link",
+            "value": "skills"
+        },
+        {
+            "id": "languages-link",
+            "value": "Languages"
         },
         {
             "id": "portfolio-link",
             "value": "Portfolio"
         },
         {
-            "id": "contact-link",
-            "value": "Contact Me"
-        },
-        {
             "id" : "presentation-title",
-            "value": "Hello, I'm Santiago Quevedo"
+            "value": "Santiago Quevedo"
         },
         {
             "id": "presentation-description",
@@ -32,7 +35,7 @@
         },
         {
             "id": "profile",
-            "value": "Profile"
+            "value": "About me"
         },
         {
             "id": "profile-description",
@@ -43,22 +46,6 @@
             "value": "Portfolio"
         },
         {
-            "id": "contact-title",
-            "value": "Contact Me"
-        },
-        {
-            "id": "from",
-            "value": "From"
-        },
-        {
-            "id": "subject",
-            "value": "Subject"
-        },
-        {
-            "id": "message",
-            "value": "Message ... "
-        },
-        {
             "id": "experience-pill",
             "value": "Experience"
         },
@@ -67,8 +54,12 @@
             "value": "Education"
         },
         {
-            "id": "skills-pill",
+            "id": "skill-section",
             "value": "Skills"
+        },
+        {
+            "id": "languages",
+            "value": "Languages"
         }
     ]
 }
