@@ -4,8 +4,9 @@
 }
 
 .skill-pills {
-    border: 1px solid black;
-    margin: 2px;
-    border-radius: 5px 5px 5px 5px;
-    padding: 1px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    margin-right: 6px;
 }
