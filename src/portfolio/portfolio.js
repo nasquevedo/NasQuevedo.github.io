@@ -16,7 +16,7 @@ const getProjects = async () => {
                             <p><b>${item.name}</b></p>
                             <p id="description_${item.id}">${item[lang + '_short_description']}</p>
                             <a href="${item.repository}" target="_blank">
-                                <img class="social-media-icons" src="./img/icons/github.png" alt="${item.name}" />
+                                <i class="bi bi-github"></i>
                             </a><br>
                             <div id="project-skills">${technologies}</div>
                         </div>
