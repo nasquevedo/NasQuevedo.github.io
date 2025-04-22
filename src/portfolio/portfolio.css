@@ -1,0 +1,25 @@
+.project-card {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.img-projects {
+    width: 100%;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

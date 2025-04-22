@@ -1,6 +1,12 @@
 {
     "data": [
         {
+            "company": "Inchcape Digital Delivery Center Colombia",
+            "position": "Sr PHP Developer",
+            "start_date": "02/07/2024",
+            "end_date": "01/04/2025"
+        },
+        {
             "company": "Publicis Groupe",
             "position": "Software Engineer",
             "start_date": "02/05/2022",
