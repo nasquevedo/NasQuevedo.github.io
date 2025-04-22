@@ -1,7 +1,9 @@
 {
     "data": [
-        {
+        {   "id": 1,
             "name": "Nido Baby Health",
+            "en_short_description": "Nido Baby Health es una pagina web estilo Landing Page con el fin de promocionar los servicios profesionales ...",
+            "es_short_description": "Nido Baby Health is a Landing Page style website to promote the professional services ...",
             "es_description": "Nido Baby Health es una pagina web estilo Landing Page con el fin de promocionar los servicios profesionales de Johana Ceron, una Doula profesional y Terapista Ocupacional con 13 años de experiencia.<br>La pagina esta separa por 4 secciones, en el home se encuentra una bienvenida con una frase personal de Johana para los visitantes y adicional el nombre de sus emprendiemineto 'Nido Baby Health', seguido de esto se encuentran los servicios profesionales a los que le usuario podra acceder, despues toda la información personal y profesional de Johana y su trayectoria y por ultimo un formulario de contacto para que los usuarios dejen su mensaje con el fin de brindar servicios o aclarar dudas.",
             "en_description": "Nido Baby Health is a Landing Page style website to promote the professional services of Johana Ceron, a professional Doula and Occupational Therapist with 13 years of experience.<br>The page is separated by 4 sections, in the home page there is a welcome with a personal sentence of Johana for the visitors and additionally the name of her business 'Nido Baby Health', followed by the professional services that the user can access, then all the personal and professional information of Johana and her career and finally a contact form for users to leave their message in order to provide services or clarify doubts.",
             "logo": "./img/nidobabyhealth.png",
@@ -9,10 +11,13 @@
             "url": "https://testnidobabyhealth.000webhostapp.com/",
             "repository": "https://github.com/NasQuevedo/NidoBabyHealth",
             "year": "2024",
-            "technologies": "php javascript jquery html css bootstrap mysql"
+            "technologies": "PHP Javascript jQuery HTML CSS Bootstrap Mysql"
         },
         {
+            "id": 2,
             "name": "Pet Searcher",
+            "es_short_description": "Pet Searcher es una pagina web creada con fines universitarios como proyecto para la material emprendimiento ...",
+            "en_short_description": "Pet Searcher is a website created for university purposes as a project for technology-based ...",
             "es_description": "Pet Searcher es una pagina web creada con fines universitarios como proyecto para la material emprendimiento de base tecnologica. El fin de esta plataforma es que los usuarios que posean una mascotan podrian acceder a diversos servicios tales busqueda de la mascota en caso de perdido donde el usuario que interactua podra hacer de dos roles el que esta en busqueda o el que la encontro, por medio de la base de datos se hace un match con las mascotas encontradas y perdidas con base en sus caractiristicas. Otros servicios que pretendia darse en la plataforma son ayuda emocional en caso de perdida y educación para la mascota.<br>Desarrollada en lenguaje de pogramación PHP y diseñada con HTML5, CSS3, Bootstrap junto con una capa de javascript y jquery para la modificación del DOM y comunicación con los controladores, se usa el patron MVC y base de datos en mysql.",
             "en_description": "Pet Searcher is a website created for university purposes as a project for technology-based entrepreneurship material. The purpose of this platform is that users who own a pet could access to various services such as search for the pet in case of lost where the user who interacts can play two roles the one who is in search or the one who found it, through the database is a match with the found and lost pets based on their characteristics. Other services intended to be provided on the platform are emotional support in case of loss and education for the pet.<br>Developed in PHP programming language and designed with HTML5, CSS3, Bootstrap along with a layer of javascript and jquery for DOM modification and communication with the controllers, using the MVC pattern and mysql database.",
             "logo": "./img/default-logo.png",
@@ -20,10 +25,13 @@
             "url": "https://petsearcher.000webhostapp.com/",
             "repository": "https://github.com/NasQuevedo/pet_searcher",
             "year": "2023",
-            "technologies": "php javascript jquery html css bootstrap mysql"
+            "technologies": "PHP Javascript jQuery HTML CSS Bootstrap Mysql"
         },
         {
+            "id": 3,
             "name": "Gestion Gastos",
+            "es_short_description":"Gestion Gastos es una aplicación que se creo con fines universitarios para una materia llamada integración continua ...",
+            "en_short_description": "Gestion Gastos is an application that was created for university purposes for a subject called continuous integration ...",
             "es_description": "Gestion Gastos es una aplicación que se creo con fines universitarios para una materia llamada integración continua, el fin de la aplicación es que los usuarios puedan gestionar su presupuesto mes a mes e incluso anualmente con el fin de que tengan mejoras habitos financieros, puedan ahorra y ver en que estan gastos su dinero, verificar que no esten gastando en gastos adicionales o 'Gastos Hormiga'.<br>El programa basicamente es una pagina web desarrollada en dos frentes, el frontend, diseñado en HTML5, CSS3, Javascript y usando jQuery, por el otro lado esta el backend desarrollado con nodejs y express.js con el fin de crear un API donde se puedan generar las transacciones a base de datos la cual es no relacional, el gestor de dicha base de datos es MongoDB con la ayuda de una libreria llamada mongoose.",
             "en_description": "Gestion Gastos is an application that was created for university purposes for a subject called continuous integration, the purpose of the application is that users can manage their budget month to month and even annually in order to have better financial habits, they can save and see where they are spending their money, verify that they are not spending on additional expenses or 'Ant Spending'.<br>The program is basically a web page developed on two fronts, the frontend, designed in HTML5, CSS3, Javascript and using jQuery, on the other side is the backend developed with nodejs and express.js in order to create an API where you can generate transactions to database which is non-relational, the manager of the database is MongoDB with the help of a library called mongoose.",
             "logo":"./img/default-logo.png",
@@ -32,40 +40,49 @@
             "repository": "https://github.com/NasQuevedo/gestion_gastos_frontend",
             "backend_repository": "https://github.com/NasQuevedo/gestion_gastos_backend",
             "year": "2023",
-            "technologies": "javascript html css jquery nodejs mongodb"
+            "technologies": "Javascript HTML CSS jQuery NodeJs Mongodb"
         },
         {
+            "id": 4,
             "name": "Bid Calculation Backend",
+            "es_short_description": "REST API para calcular el precio de un vehiculo basado en su precio base y tipo",
+            "en_short_description": "REST API to calculate the total vehicle price based on base price and type",
             "es_description": "REST API para calcular el precio de un vehiculo basado en su precio base y tipo",
             "en_description": "REST API to calculate the total vehicle price based on base price and type",
             "logo": "./img/default-logo.png",
             "home": "",
             "url": "",
-            "repository": "",
+            "repository": "https://github.com/nasquevedo/bid-calculation-be",
             "year": "2025",
-            "technologies": "Symfony mysql"
+            "technologies": "PHP Symfony Mysql"
         },
         {
+            "id": 5,
             "name": "Bid Calculation Frontend - Vuejs",
+            "es_short_description": "Pagina para calcular el precio de un vehiculo basado en su precio base y tipo a travez de un REST API",
+            "en_short_description": "Page to calculate the total price of a vehicle based on its base price and type through a REST API",
             "es_description": "Pagina para calcular el precio de un vehiculo basado en su precio base y tipo a travez de un REST API",
             "en_description": "Page to calculate the total price of a vehicle based on its base price and type through a REST API",
             "logo": "./img/default-logo.png",
             "home": "",
             "url": "",
-            "repository": "",
+            "repository": "https://github.com/nasquevedo/bid-calculation-fe_vuejs",
             "year": "2025",
-            "technologies": "ReactJs"
+            "technologies": "Javascript VueJs"
         },
         {
+            "id": 6,
             "name": "Bid Calculation Frontend - ReactJs",
+            "es_short_description": "Pagina para calcular el precio de un vehiculo basado en su precio base y tipo a travez de un REST API",
+            "en_short_description": "Pagina para calcular el precio de un vehiculo basado en su precio base y tipo a travez de un REST API",
             "es_description": "Pagina para calcular el precio de un vehiculo basado en su precio base y tipo a travez de un REST API",
             "en_description": "Page to calculate the total price of a vehicle based on its base price and type through a REST API",
             "logo": "./img/default-logo.png",
             "home": "",
             "url": "",
-            "repository": "",
+            "repository": "https://github.com/nasquevedo/bid-calculation-fe_reactjs",
             "year": "2025",
-            "technologies": "ReactJs"
+            "technologies": "Javascript ReactJs"
         }
     ]
 }

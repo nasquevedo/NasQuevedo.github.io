@@ -7,6 +7,7 @@
     width: 30%;
     margin: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -15,11 +16,32 @@
 }
 
 .img-projects {
-    width: 100%;
+    width: 50%;
 }
 
 #projects {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+#project-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.description {
+    white-space: wrap;
+}
+
+@media (max-width: 992px) {
+    .project-card {
+        width: 100%;
+    }
 }

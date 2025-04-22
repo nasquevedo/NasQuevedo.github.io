@@ -1,16 +1,24 @@
-const projects = async () => {
+var projects = {};
+
+const getProjects = async () => {
     try {
         const response = await fetch("./src/model/projects.json");
         const result = await response.json();
 
         let html = "";
-        result.data.forEach(item => {
-
-            html += `<div class="project-card">
+        projects = result.data;
+        projects.forEach(item => {
+            const technologies = getTechnologies(item.technologies)
+            html += `<div class="project-card" onClick="showLessMore(${item.id})">
+                        <input id="${item.id}" type="hidden" value="closed" />
                         <img class="img-projects" src="${item.logo}" alt="${item.name}" title="${item.name}"/>
-                        <div class="overlay" onclick="views('${item.name}')">
+                        <div class="overlay">
                             <p><b>${item.name}</b></p>
-                            <!--<a href="#">View</a>-->
+                            <p id="description_${item.id}">${item[lang + '_short_description']}</p>
+                            <a href="${item.repository}" target="_blank">
+                                <img class="social-media-icons" src="./img/icons/github.png" alt="${item.name}" />
+                            </a><br>
+                            <div id="project-skills">${technologies}</div>
                         </div>
                     </div>`;
         });
@@ -21,4 +29,28 @@ const projects = async () => {
     }
 };
 
-projects();
+const getTechnologies = (technologies) => {
+    techs = '';
+    techArray = technologies.split(' ');
+    techArray.forEach(tech => {
+        techs += `<span class="skill-pills">${tech}</span>`
+    });
+
+    return techs;
+}
+
+const showLessMore = (id) => {
+    const project = projects.filter(item => item.id === id)
+
+    if (jQuery("#" + id).val() === 'closed') {
+        jQuery("#" + id).val('open')
+        jQuery("#description_" + id).html(`${project[0][lang + "_description"]}`)
+        return
+    }
+
+    jQuery("#" + id).val('closed')
+    jQuery("#description_" +id).html(`${project[0][lang + "_short_description"]}`)
+    return
+}
+
+getProjects();

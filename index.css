@@ -50,11 +50,11 @@ button:hover, .btn:hover {
   background-color: var(--color-hover);
 }
 
-
 .navbar {
     background-color: white !important;
     border-bottom: 2px solid black;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 100;
 }
@@ -129,5 +129,9 @@ button:hover, .btn:hover {
     .overlay-container {
         width: 20%;
         float: left;
+    }
+
+    #main {
+        border: 0px !important;
     }
 }
