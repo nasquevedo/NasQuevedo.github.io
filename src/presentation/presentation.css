@@ -1,0 +1,36 @@
+#home {
+    max-width: 100%;
+    width: 100%;
+}
+
+#main {
+    border-right: 1px solid black;
+}
+
+#presentation-title {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+#social-media a {
+    text-decoration: none;
+}
+
+.social-media-icons {
+    width: 20px !important;
+    opacity: 0.8;
+}
+
+.social-media-icons:hover {
+    opacity: 1;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}

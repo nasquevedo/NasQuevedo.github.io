@@ -33,6 +33,39 @@
             "backend_repository": "https://github.com/NasQuevedo/gestion_gastos_backend",
             "year": "2023",
             "technologies": "javascript html css jquery nodejs mongodb"
+        },
+        {
+            "name": "Bid Calculation Backend",
+            "es_description": "REST API para calcular el precio de un vehiculo basado en su precio base y tipo",
+            "en_description": "REST API to calculate the total vehicle price based on base price and type",
+            "logo": "./img/default-logo.png",
+            "home": "",
+            "url": "",
+            "repository": "",
+            "year": "2025",
+            "technologies": "Symfony mysql"
+        },
+        {
+            "name": "Bid Calculation Frontend - Vuejs",
+            "es_description": "Pagina para calcular el precio de un vehiculo basado en su precio base y tipo a travez de un REST API",
+            "en_description": "Page to calculate the total price of a vehicle based on its base price and type through a REST API",
+            "logo": "./img/default-logo.png",
+            "home": "",
+            "url": "",
+            "repository": "",
+            "year": "2025",
+            "technologies": "ReactJs"
+        },
+        {
+            "name": "Bid Calculation Frontend - ReactJs",
+            "es_description": "Pagina para calcular el precio de un vehiculo basado en su precio base y tipo a travez de un REST API",
+            "en_description": "Page to calculate the total price of a vehicle based on its base price and type through a REST API",
+            "logo": "./img/default-logo.png",
+            "home": "",
+            "url": "",
+            "repository": "",
+            "year": "2025",
+            "technologies": "ReactJs"
         }
     ]
 }

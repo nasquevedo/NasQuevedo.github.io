@@ -1,0 +1,19 @@
+#profile-img {
+    width: 50% !important;
+    border-radius: 100%;
+}
+
+#profile-img:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 10px black;
+    border: 1px solid white;
+}
+
+#profile-description {
+    transform: translateY(10%);
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+}

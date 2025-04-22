@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-bg: #f5f7fa;
+  --color-primary: #2c3e50;
+  --color-secondary: #3498db;
+  --color-text: #2d3436;
+  --color-hover: #2980b9;
+  --color-white: #ffffff;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --border-radius: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+button, .btn {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--color-hover);
+}
+
+
+.navbar {
+    background-color: white !important;
+    border-bottom: 2px solid black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.section {
+    padding: 5rem 2rem;
+    position: relative;
+}
+
+.icons {
+    width: 20px !important;
+    border: 1px solid white;
+    border-radius: 100%;
+    color: white;
+}
+
+.btn {
+    border: 1px solid white !important;
+    color: white;
+    border-radius: 0px;
+}
+
+/** Footer **/
+#footer {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-icon {
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 100%;
+    opacity: 0.5;
+}
+
+.footer-icon:hover {
+    opacity: 1;
+}
+
+/** functions **/
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/** mobile */
+@media (max-width: 992px) {
+    #presentation-title {
+        font-size: 19px;
+    }
+
+    .overlay-container {
+        width: 20%;
+        float: left;
+    }
+}

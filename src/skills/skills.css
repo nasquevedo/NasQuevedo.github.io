@@ -1,0 +1,11 @@
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-pills {
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 1px;
+}
