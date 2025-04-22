@@ -2,13 +2,36 @@
 
 :root {
   --color-bg: #f5f7fa;
+  --color-bg-navbar: #ffffff;
+  --color-border-left: #000000;
   --color-primary: #2c3e50;
   --color-secondary: #3498db;
   --color-text: #2d3436;
   --color-hover: #2980b9;
   --color-white: #ffffff;
+  --color-skills: #ffffff;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   --border-radius: 12px;
+  --color-bg-project: #ffffff;
+  --color-icon: #000000;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-project: rgba(0, 0, 0, 0.08);
+  --display-dark-icon: block;
+  --display-bright-icon: none;
+}
+
+.dark-mode {
+    --color-bg: #121212;
+    --color-text: #f1f1f1;
+    --color-bg-navbar: #000000;
+    --color-border-left: #ffffff;
+    --color-skills: #121212;
+    --color-bg-project: #000000;
+    --color-icon: #ffffff;
+    --color-shadow: rgba(255, 255, 255, 0.1);
+    --color-shadow-project: rgba(255, 255, 255, 0.08);
+    --display-dark-icon: none;
+    --display-bright-icon: block;
 }
 
 body {
@@ -25,6 +48,10 @@ h1, h2, h3 {
   color: var(--color-primary);
   font-weight: 700;
   margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--color-icon);
 }
 
 section {
@@ -49,15 +76,30 @@ button:hover, .btn:hover {
   background-color: var(--color-hover);
 }
 
+#dark-icon {
+    display: var(--display-dark-icon);
+}
+
+#bright-icon {
+    display: var(--display-bright-icon);
+}
+
+#darkToggle {
+    cursor: pointer;
+}
+
+#logo {
+    color: var(--color-text) !important;
+}
+
 .navbar {
-    background-color: white !important;
-    border-bottom: 2px solid black;
+    background-color: var(--color-bg-navbar) !important;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px var(--color-shadow);
     z-index: 100;
+    color: var(--color-text) !important;
 }
 
 .section {

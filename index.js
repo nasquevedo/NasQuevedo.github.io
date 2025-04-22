@@ -42,3 +42,8 @@ const changeLang = (value) => {
 };
 
 changeLang(localStorage.getItem('lang'));
+
+const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
