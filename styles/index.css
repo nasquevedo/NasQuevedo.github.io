@@ -78,6 +78,10 @@ button:hover, .btn:hover {
     color: white;
 }
 
+.bi-filetype-pdf {
+    cursor: pointer !important;
+}
+
 .btn {
     border: 1px solid white !important;
     color: white;
