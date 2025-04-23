@@ -15,5 +15,5 @@
 }
 
 .text-body-secondary {
-    
+    color: var(--color-text) !important;
 }
