@@ -49,6 +49,10 @@ const toggle = document.getElementById('darkToggle');
 
 const openCv = () =>
 {
-    var win = window.open(`./cv/${lang}/santiago-quevedo.pdf`, '_blank')
-    win.focus()
+    const link = document.createElement("a");
+    link.href = `./cv/${lang}/santiago-quevedo.pdf`; // Ruta al archivo
+    link.download = "CV-Santiago-Quevedo.pdf"; // Nombre al guardar
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
