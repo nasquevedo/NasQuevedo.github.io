@@ -12,16 +12,10 @@ const activeLink = (id) => {
 }
 
 const titles = async () => {
-    try {
-        const response = await fetch(`./lang/${lang}.json`);
-        const result = await response.json();
-
-        result.data.forEach(item => {
-            jQuery("#" +  item.id).html(item.value);
-        });
-    } catch(e) {
-        console.log("Error trying to get the titles", e);
-    }
+    const result = await getFetch(`./lang/${lang}.json`);
+    result.data.forEach(item => {
+        jQuery("#" +  item.id).html(item.value);
+    });
 };
 
 const changeLang = (value) => {
@@ -38,7 +32,6 @@ const changeLang = (value) => {
     }
 
     titles();
-    languages();
 };
 
 changeLang(localStorage.getItem('lang'));
