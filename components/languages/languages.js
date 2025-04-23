@@ -14,8 +14,7 @@ const getLanguageRows = (langs) => {
 }
 
 const languages = async () => {
-    const response = await fetch("./src/model/language.json");
-    const result = await response.json();
+    const result = await getFetch(`${MODEL_ENDPOINT}${LANGUAGE_ENDPOINT}`)
 
     const currentLanguageItems = result.data.filter(item => {
         return item.lang === lang
@@ -25,5 +24,6 @@ const languages = async () => {
         jQuery("#native").html(item.native);
         jQuery("#language-table-body").html(getLanguageRows(item.others));
     });
-    
 }
+
+languages()

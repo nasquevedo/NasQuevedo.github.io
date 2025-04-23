@@ -18,25 +18,18 @@ const returnPill = (item, experience) => {
 }
 
 const experience = async () => {
-    try {
-        const response = await fetch("./src/model/experience.json");
-        const result = await response.json();
+    const result = await getFetch(`${MODEL_ENDPOINT}${EXPERIENCE_ENDPONT}`)
 
-        html = '';
-        result.data.forEach(item => {
-            html += returnPill(item, true);
-        });
+    html = '';
+    result.data.forEach(item => {
+        html += returnPill(item, true);
+    });
 
-        jQuery("#experience-list").html(html);
-    } catch(e) {
-        console.log("Error trying to get experience info", e);
-    }
+    jQuery("#experience-list").html(html);
 };
 
 const education = async () => {
-    try {
-        const response = await fetch("./src/model/education.json");
-        const result = await response.json();
+        const result = await getFetch(`${MODEL_ENDPOINT}${EDUCATION_ENDPOINT}`)
 
         html = ''
         result.data.forEach(item => {
@@ -44,9 +37,6 @@ const education = async () => {
         });
 
         jQuery("#education-list").html(html);
-    } catch(e) {
-        console.log("Error trying to get education info", e);
-    }
 };
 
 experience();

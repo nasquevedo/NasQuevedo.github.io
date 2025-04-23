@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-bg: #f5f7fa;
+  --color-bg-navbar: #ffffff;
+  --color-border-bottom: #000000;
+  --color-border-left: #000000;
+  --color-primary: #2c3e50;
+  --color-secondary: #3498db;
+  --color-text: #2d3436;
+  --color-hover: #2980b9;
+  --color-white: #ffffff;
+  --color-skills: #ffffff;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --border-radius: 12px;
+  --color-bg-project: #ffffff;
+  --color-icon: #000000;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-project: rgba(0, 0, 0, 0.08);
+  --display-dark-icon: block;
+  --display-bright-icon: none;
+}
+
+.dark-mode {
+    --color-bg: #121212;
+    --color-text: #f1f1f1;
+    --color-bg-navbar: #000000;
+    --color-border-bottom: #ffffff;
+    --color-border-left: #ffffff;
+    --color-skills: #121212;
+    --color-bg-project: #000000;
+    --color-icon: #ffffff;
+    --color-shadow: rgba(255, 255, 255, 0.1);
+    --color-shadow-project: rgba(255, 255, 255, 0.08);
+    --display-dark-icon: none;
+    --display-bright-icon: block;
+}
