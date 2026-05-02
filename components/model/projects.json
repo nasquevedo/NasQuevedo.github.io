@@ -10,7 +10,7 @@
             "home": "./img/hsolutions-home.png",
             "url": "https://hsolutions.com.co/",
             "repository": "https://github.com/NasQuevedo/hsolutions",
-            "year": "2024",
+            "year": "2026",
             "technologies": "PHP Javascript jQuery HTML CSS Bootstrap Mysql"
         },
         {
@@ -22,7 +22,7 @@
             "en_description": "Pet Searcher is a website created for university purposes as a project for technology-based entrepreneurship material. The purpose of this platform is that users who own a pet could access to various services such as search for the pet in case of lost where the user who interacts can play two roles the one who is in search or the one who found it, through the database is a match with the found and lost pets based on their characteristics. Other services intended to be provided on the platform are emotional support in case of loss and education for the pet.<br>Developed in PHP programming language and designed with HTML5, CSS3, Bootstrap along with a layer of javascript and jquery for DOM modification and communication with the controllers, using the MVC pattern and mysql database.",
             "logo": "./img/default-logo.png",
             "home": "./img/petsearcher-home.png",
-            "url": "https://petsearcher.000webhostapp.com/",
+            "url": "",
             "repository": "https://github.com/NasQuevedo/pet_searcher",
             "year": "2023",
             "technologies": "PHP Javascript jQuery HTML CSS Bootstrap Mysql"
@@ -36,7 +36,7 @@
             "en_description": "Gestion Gastos is an application that was created for university purposes for a subject called continuous integration, the purpose of the application is that users can manage their budget month to month and even annually in order to have better financial habits, they can save and see where they are spending their money, verify that they are not spending on additional expenses or 'Ant Spending'.<br>The program is basically a web page developed on two fronts, the frontend, designed in HTML5, CSS3, Javascript and using jQuery, on the other side is the backend developed with nodejs and express.js in order to create an API where you can generate transactions to database which is non-relational, the manager of the database is MongoDB with the help of a library called mongoose.",
             "logo":"./img/default-logo.png",
             "home": "./img/gestiongastos-home.png",
-            "url": "https://gestioncontrolgastos.000webhostapp.com/es/login.html",
+            "url": "",
             "repository": "https://github.com/NasQuevedo/gestion_gastos_frontend",
             "backend_repository": "https://github.com/NasQuevedo/gestion_gastos_backend",
             "year": "2023",

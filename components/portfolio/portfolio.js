@@ -7,6 +7,7 @@ const getProjects = async () => {
     projects = result.data;
     projects.forEach(item => {
         const technologies = getTechnologies(item.technologies)
+
         html += `<div class="project-card" onClick="showLessMore(${item.id})">
                     <input id="${item.id}" type="hidden" value="closed" />
                     <img class="img-projects" src="${item.logo}" alt="${item.name}" title="${item.name}"/>
@@ -15,7 +16,11 @@ const getProjects = async () => {
                         <p id="description_${item.id}">${item[lang + '_short_description']}</p>
                         <a href="${item.repository}" target="_blank">
                             <i class="bi bi-github"></i>
-                        </a><br>
+                        </a>
+                        ${item.url ? `<a href="${item.url}" target="_blank">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>` : ''}
+                        <br>
                         <div id="project-skills">${technologies}</div>
                     </div>
                 </div>`;
